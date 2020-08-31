@@ -17,7 +17,7 @@ function Header(props) {
                             <a href="#">The loai</a>
                         </li>
                         <li className={classes.header__input_center}>
-                            <Input size="large" className={classes.header__input} />
+                            <Input size="large" placeholder="Tim khoa hoc" className={classes.header__input} />
                         </li>
                     </ul>
                      
