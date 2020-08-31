@@ -1,0 +1,11 @@
+.topic{
+    .topic_center{
+        width: 1200px;
+        margin: auto;
+        .topic_item{
+            background-color: yellowgreen;
+            width: 300px; display: inline-block;
+            height: 70px;
+        }
+    }
+}

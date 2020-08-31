@@ -1,0 +1,31 @@
+.learn{
+    height: 400px;
+  
+    .learn_center{
+        width: 1200px;
+        margin: auto;
+        margin-top: 10%;
+
+
+        .learn_center__item{
+          
+            h1{
+                width: 350px;
+                color: #3e416d;
+            }
+            p{
+                width:500px;
+                color: #3e416d;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            button{
+                background-color: #3e416d;
+                color: white;
+                width: 100px;
+                height: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
