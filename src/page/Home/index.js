@@ -1,27 +1,28 @@
 import React, { useEffect } from 'react'
-import { Layout } from 'antd';
 import { Fragment } from 'react';
 import BannerHome from '../../Component/BannerHome';
 import PropTypes from 'prop-types';
 import LearnHome from '../../Component/LearnHome';
 import Topic from '../../Component/Topic';
-import Course from '../../Component/Course';
+import ListCourse from '../../Component/ListCourse';
 import Technical from '../../Component/Technical';
 import Footer from '../../Layout/Footer';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
+import { actGetAll } from '../../action/creator';
+
 function Home(props) {
     const course =useSelector(state=>state.CourseReducer.dsCourse);
-    console.log(course);
+    const dispatch = useDispatch();
     
     useEffect(()=>{
-          
+          dispatch(actGetAll());
     },[])
     return (
         <Fragment>
            <BannerHome />
            <LearnHome />
            <Topic />
-           <Course />
+           <ListCourse courses={course}/>
            <Technical />
            <Footer />
         </Fragment>
@@ -29,7 +30,7 @@ function Home(props) {
 }
 
 Home.propTypes = {
-    course:PropTypes.array.isRequired
+    course:PropTypes.array
 }
 
 

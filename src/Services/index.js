@@ -1,4 +1,8 @@
+const { instance } = require("../config")
 
-const GetAll =()=>{
+export const CourseService ={   
+    GetAll:()=>{
+        return  instance.get('/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01');
+    },
     
 }

@@ -1,7 +1,14 @@
-.course{
-    margin-top: 6%;
-        .course_center{
-            width: 1200px;
-            margin: auto;
-        }
+.card_item{
+    .card_item_card{
+        border-radius: 10px;
+        height: 300px;
+        width: auto;
+      
     }
+    .card_item_img{
+        height: 150px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
